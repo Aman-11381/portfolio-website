@@ -2,6 +2,7 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import AboutSection from '../sections/AboutSection';
 import WorkSection from '../sections/WorkSection';
+import CodeVisualization from '../components/CodeVisualization';
 
 function Home() {
   return (
@@ -38,9 +39,9 @@ function Home() {
               </div>
             </div>
 
-            {/* Right side - Empty for now */}
+            {/* Right side - 3D Code Visualization */}
             <div className="hidden lg:flex items-center justify-center">
-              {/* Space for future content (photo, illustration, etc.) */}
+              <CodeVisualization />
             </div>
           </div>
         </section>
