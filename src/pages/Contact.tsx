@@ -1,7 +1,41 @@
+import { useState } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 function Contact() {
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus('submitting');
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      // Replace YOUR_FORM_ID with your actual Formspree form ID
+      const response = await fetch('https://formspree.io/f/mqaodolr', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json',
+        },
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        form.reset();
+        setTimeout(() => setStatus('idle'), 5000);
+      } else {
+        setStatus('error');
+        setTimeout(() => setStatus('idle'), 5000);
+      }
+    } catch (error) {
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 5000);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <Navigation />
@@ -16,8 +50,25 @@ function Contact() {
           </p>
         </div>
 
+        {/* Status messages */}
+        {status === 'success' && (
+          <div className="mb-6 p-4 bg-green-50 border-2 border-green-500 rounded-lg">
+            <p className="text-green-700 font-semibold">
+              ✓ Message sent successfully! I'll get back to you soon.
+            </p>
+          </div>
+        )}
+
+        {status === 'error' && (
+          <div className="mb-6 p-4 bg-red-50 border-2 border-red-500 rounded-lg">
+            <p className="text-red-700 font-semibold">
+              ✗ Something went wrong. Please try again or email me directly.
+            </p>
+          </div>
+        )}
+
         {/* Contact form */}
-        <form className="space-y-6">
+        <form className="space-y-6" onSubmit={handleSubmit}>
           {/* Name field */}
           <div>
             <label
@@ -94,9 +145,10 @@ function Contact() {
           <div>
             <button
               type="submit"
-              className="px-8 py-4 bg-purple-600 text-white font-bold text-lg rounded-lg hover:bg-purple-700 transition-colors shadow-lg hover:shadow-xl"
+              disabled={status === 'submitting'}
+              className="px-8 py-4 bg-purple-600 text-white font-bold text-lg rounded-lg hover:bg-purple-700 transition-colors shadow-lg hover:shadow-xl disabled:bg-gray-400 disabled:cursor-not-allowed"
             >
-              SEND IT
+              {status === 'submitting' ? 'SENDING...' : 'SEND IT'}
             </button>
           </div>
         </form>
