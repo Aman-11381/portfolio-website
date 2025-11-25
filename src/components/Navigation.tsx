@@ -45,7 +45,7 @@ function Navigation() {
         <div className="flex items-center justify-between">
           {/* Logo on the left */}
           <Link to="/" className="text-2xl font-bold text-gray-900 hover:text-purple-600 transition-colors">
-            AmanDCZ.
+            Aman_
           </Link>
 
           {/* Navigation links in the center */}
