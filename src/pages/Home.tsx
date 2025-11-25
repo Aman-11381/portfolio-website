@@ -24,7 +24,7 @@ function Home() {
               </h1>
 
               <p className="text-gray-600 text-lg lg:text-xl mb-10 max-w-xl leading-relaxed">
-                I'm a software engineer with 2 years of experience, I'll help you
+                I'm a full stack developer based in India, I'll help you
                 build amazing applications your users will love.
               </p>
 

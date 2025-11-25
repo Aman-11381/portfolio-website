@@ -39,14 +39,15 @@ function AboutSection() {
             </h3>
             <div className="flex flex-wrap gap-3">
               {[
+                'C++',
+                'C#',
                 'JavaScript',
-                'React',
                 'TypeScript',
+                '.NET Core',
+                'AngularJS',
+                'React',
                 'Node.js',
-                'Python',
-                'SQL',
-                'Git',
-                'AWS',
+                'Azure',
               ].map((tech) => (
                 <span
                   key={tech}
