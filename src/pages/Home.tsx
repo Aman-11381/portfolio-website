@@ -24,18 +24,12 @@ function Home() {
                 build amazing applications your users will love.
               </p>
 
-              <div className="flex flex-wrap gap-4">
+              <div>
                 <a
                   href="/contact"
-                  className="px-8 py-4 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition-colors shadow-lg hover:shadow-xl"
+                  className="px-8 py-4 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition-colors shadow-lg hover:shadow-xl inline-block"
                 >
                   Get In Touch
-                </a>
-                <a
-                  href="/work"
-                  className="px-8 py-4 bg-white text-gray-900 font-semibold rounded-lg border-2 border-gray-900 hover:bg-gray-50 transition-colors"
-                >
-                  Browse Projects
                 </a>
               </div>
             </div>
