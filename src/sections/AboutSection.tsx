@@ -11,26 +11,24 @@ function AboutSection() {
           {/* Content */}
           <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
             <p>
-              I'm a passionate software engineer with 2 years of professional
-              experience building modern web applications. I specialize in
-              creating scalable, user-friendly solutions that solve real-world
-              problems.
+              Software Engineer with 2+ years of experience building scalable,
+              secure, and high-performance systems across large-scale consumer
+              platforms.
             </p>
 
             <p>
-              My journey in software development began during my college years,
-              where I discovered my love for coding and problem-solving. Since
-              then, I've worked on various projects ranging from e-commerce
-              platforms to data visualization tools, constantly learning and
-              growing with each challenge.
+              At Microsoft, part of the Commerce Platform Experience team,
+              developing cloud systems that power the Microsoft Store's customer
+              support and commerce operations. Work spans API development, AI
+              integration, and large-scale optimization, focused on improving
+              performance, reliability, and user experience.
             </p>
 
             <p>
-              I believe in writing clean, maintainable code and staying updated
-              with the latest technologies and best practices. When I'm not
-              coding, you can find me exploring new frameworks, contributing to
-              open-source projects, or sharing my knowledge with the developer
-              community.
+              Passionate about solving complex engineering problems, designing
+              for scale, and creating systems that combine technical excellence
+              with real-world impact. Always curious, data-driven, and motivated
+              by opportunities to build products that make a difference.
             </p>
           </div>
 

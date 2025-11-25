@@ -13,7 +13,7 @@ function Footer() {
           {/* Right side - Social links */}
           <div className="flex items-center gap-6">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/Aman-11381"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-white hover:text-purple-200 transition-colors font-medium"
@@ -35,7 +35,7 @@ function Footer() {
             </a>
 
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/aman11381/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-white hover:text-purple-200 transition-colors font-medium"
