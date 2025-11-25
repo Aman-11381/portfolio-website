@@ -63,7 +63,7 @@ function WorkSection() {
 
           {/* Experience items */}
           <div className="space-y-12">
-            {experiences.map((exp, index) => (
+            {experiences.map((exp) => (
               <div key={exp.id} className="relative pl-20">
                 {/* Timeline dot */}
                 <div
