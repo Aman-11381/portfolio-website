@@ -1,11 +1,13 @@
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import AboutSection from '../sections/AboutSection';
 
 function Home() {
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <Navigation />
       <main className="flex-grow">
+        {/* Hero Section */}
         <section className="max-w-7xl mx-auto px-6 py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Text content */}
@@ -41,6 +43,9 @@ function Home() {
             </div>
           </div>
         </section>
+
+        {/* About Section */}
+        <AboutSection />
       </main>
       <Footer />
     </div>

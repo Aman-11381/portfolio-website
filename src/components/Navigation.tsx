@@ -12,12 +12,12 @@ function Navigation() {
 
           {/* Navigation links in the center */}
           <div className="flex items-center space-x-8">
-            <Link
-              to="/about"
+            <a
+              href="/#about"
               className="text-gray-700 hover:text-purple-600 transition-colors font-medium"
             >
               About
-            </Link>
+            </a>
             <Link
               to="/work"
               className="text-gray-700 hover:text-purple-600 transition-colors font-medium"
