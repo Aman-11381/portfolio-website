@@ -1,6 +1,7 @@
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import AboutSection from '../sections/AboutSection';
+import WorkSection from '../sections/WorkSection';
 
 function Home() {
   return (
@@ -46,6 +47,9 @@ function Home() {
 
         {/* About Section */}
         <AboutSection />
+
+        {/* Work Section */}
+        <WorkSection />
       </main>
       <Footer />
     </div>
